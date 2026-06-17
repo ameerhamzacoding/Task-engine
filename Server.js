@@ -3,7 +3,6 @@ const express = require("express");
 const connectDB = require("./config/db");
 const taskRoutes = require("./routes/taskRoutes");
 const errorHandler = require("./middleware/errorHandler");
-
 const app = express();
 
 app.use(express.json());
@@ -23,3 +22,4 @@ app.use((err, req, res, next) => {
 app.listen(process.env.PORT || 8000, () => {
   console.log("Server started successfully");
 });
+module.exports = app;
