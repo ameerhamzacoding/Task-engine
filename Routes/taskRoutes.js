@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const validateTaskInput = require("../middleware/validateTask");
+const validateTaskInput = require("../middleware/validatetask");
 const { createTask,getAllTasks,toggleTaskStatus,clearCompletedTasks } = require("../controllers/taskController");
 
 // POST /api/tasks
