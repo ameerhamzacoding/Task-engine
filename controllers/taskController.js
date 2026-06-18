@@ -1,4 +1,4 @@
-const Task = require("../models/Task");
+const Task = require("../Models/Task");
 const mongoose = require("mongoose");
 //! Post Request 
 const createTask = async (req, res, next) => {
